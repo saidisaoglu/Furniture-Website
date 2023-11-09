@@ -1,0 +1,16 @@
+.headerContainer {
+  .dropdown {
+    display: none;
+    z-index: 2;
+  }
+  .active {
+    display: block;
+  }
+  .dropDownMenu {
+    display: none;
+    z-index: 3;
+  }
+  .activeMenu {
+    display: block;
+  }
+}

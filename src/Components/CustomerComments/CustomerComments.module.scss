@@ -1,0 +1,30 @@
+@import "../../Scss/Color/colors";
+@import "../../Scss/Responsive\ measure/measure";
+
+.customerCommentsSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @include responsive992 {
+    justify-content: start;
+  }
+  .CustomerCommentsHeader {
+    position: absolute;
+    top: 110px;
+    font-size: 1.5rem;
+    color: $main-color;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(90deg, #555 0%, #896a53 52.03%, #555 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX(-50%, 50%);
+    @include responsive992 {
+      top: 55px;
+    }
+  }
+}

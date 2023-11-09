@@ -1,0 +1,224 @@
+:root {
+  --Montserrat-Font-Family: "Montserrat";
+  --colorForText: #333333;
+}
+.menuContainer {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 48px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(38.5px);
+  .addressElement {
+    padding-left: 3px;
+    img {
+      width: 53px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+  .textsElement {
+    display: none;
+  }
+  .languageAndButtonElements {
+    .dropdownElement1440 {
+      display: none;
+    }
+    .iconAndTextButton {
+      display: none;
+    }
+  }
+  .dropdownAndMenuBar {
+    display: flex;
+    align-items: center;
+    .dropdownElement {
+      padding-right: 48px;
+      padding-top: 5px;
+    }
+    .iconAndTextButton768 {
+      display: none;
+    }
+    .menuBarElement {
+      padding: 15px 9px 0 12px;
+      .firstMenuText {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        color: var(--colorForText);
+        font-family: var(--Montserrat-Font-Family);
+      }
+      .secondMenuText {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .menuContainer {
+    height: 67px;
+    .addressElement {
+      img {
+        width: 80px;
+        height: 56px;
+      }
+    }
+    .dropdownAndMenuBar {
+      display: flex;
+      align-items: center;
+      .dropdownElement {
+        display: block;
+        padding-right: 74px;
+        padding-top: 5px;
+      }
+      .iconAndTextButton768 {
+        height: 48px;
+        padding: 12px;
+        display: block;
+        background: #dead8a;
+        border-radius: 8px;
+        border: none;
+        margin-right: 24px;
+        &:active {
+          background-color: #a18570;
+        }
+        .buttonElements {
+          width: 180px;
+          display: flex;
+          justify-content: center;
+          height: 24px;
+          img {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+          }
+          p {
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            padding-top: 2px;
+          }
+        }
+      }
+      .menuBarElement {
+        padding: 15px 10px 0 0;
+        .firstMenuText {
+          display: none;
+        }
+        .secondMenuText {
+          display: block;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          color: var(--colorForText);
+          font-family: var(--Montserrat-Font-Family);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menuContainer {
+    height: 90px;
+    padding: 0 130px;
+    .textsElement {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 15px 0;
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #333;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      div:nth-child(2) {
+        padding: 0 32px;
+      }
+      div:nth-child(4) {
+        padding: 0 32px;
+      }
+      div:last-child {
+        padding-left: 32px;
+      }
+    }
+    .languageAndButtonElements {
+      display: flex;
+      align-items: center;
+      .dropdownElement1440 {
+        display: block;
+        display: block;
+        padding-right: 80px;
+        padding-top: 5px;
+      }
+      .iconAndTextButton {
+        height: 48px;
+        padding: 12px;
+        display: block;
+        background: #dead8a;
+        border-radius: 8px;
+        border: none;
+        margin-right: 24px;
+        transition: background-color 0.2s;
+        &:hover {
+          background-color: #a18570;
+        }
+        &:active {
+          background-color: #8c6d56;
+        }
+        .buttonElements {
+          width: 180px;
+          display: flex;
+          justify-content: center;
+          height: 24px;
+          img {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+          }
+          p {
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            padding-top: 2px;
+          }
+        }
+      }
+    }
+    .dropdownAndMenuBar {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .menuContainer {
+    padding: 0 370px;
+  }
+}
