@@ -69,9 +69,9 @@ export function App() {
             Landscape={texts.Landscape}
             RepairAndConstruction={texts.RepairAndConstruction}
           />
-          {/* <Vlog /> */}
-          {/* <WhereToFind /> */}
-          {/* <CustomerComments /> */}
+          <Vlog />
+          <WhereToFind />
+          <CustomerComments />
           <AboutUs
             aboutUs={texts.aboutUs}
             userName={texts.userName}
@@ -130,7 +130,7 @@ export function App() {
                 RepairAndConstruction={texts.RepairAndConstruction}
               />
             </FullpageSection>
-            {/* <FullpageSection>
+            <FullpageSection>
               <Vlog />
             </FullpageSection>
             <FullpageSection>
@@ -138,7 +138,7 @@ export function App() {
             </FullpageSection>
             <FullpageSection>
               <CustomerComments />
-            </FullpageSection> */}
+            </FullpageSection>
             <FullpageSection>
               <AboutUs
                 aboutUs={texts.aboutUs}
