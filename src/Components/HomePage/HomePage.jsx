@@ -9,9 +9,8 @@ export default function HomePage({
   whereToFind,
   vlog,
   customerReviews,
-  contact,
+  contactWithUs,
   addressWood,
-  setTexts,
 }) {
   return (
     <>
@@ -23,9 +22,8 @@ export default function HomePage({
         whereToFind={whereToFind}
         vlog={vlog}
         customerReviews={customerReviews}
-        contact={contact}
+        contactWithUs={contactWithUs}
         addressWood={addressWood}
-        setTexts={setTexts}
       />
       <CoverflowSwiper />
     </>

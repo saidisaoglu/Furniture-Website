@@ -13,9 +13,8 @@ export default function Navbar({
   whereToFind,
   vlog,
   customerReviews,
-  contact,
+  contactWithUs,
   addressWood,
-  setTexts,
 }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [dropDownNavbarVisible, setDropDownNavbarVisible] = useState(false);
@@ -41,11 +40,10 @@ export default function Navbar({
         whereToFind={whereToFind}
         vlog={vlog}
         customerReviews={customerReviews}
-        contact={contact}
+        contactWithUs={contactWithUs}
         addressWood={addressWood}
         toggleDropdown={toggleDropdown}
         toggleDropDownNavbar={toggleDropDownNavbar}
-        setTexts={setTexts}
       />
       <div
         className={`${styles.dropdown}${dropdownVisible ? styles.active : ""}`}
@@ -56,7 +54,7 @@ export default function Navbar({
           whereToFind={whereToFind}
           vlog={vlog}
           customerReviews={customerReviews}
-          contact={contact}
+          contactWithUs={contactWithUs}
           addressWood={addressWood}
           closeDropdown={closeDropdown}
         />
@@ -72,7 +70,7 @@ export default function Navbar({
           whereToFind={whereToFind}
           vlog={vlog}
           customerReviews={customerReviews}
-          contact={contact}
+          contactWithUs={contactWithUs}
         />
       </div>
     </header>

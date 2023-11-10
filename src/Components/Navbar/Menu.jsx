@@ -9,11 +9,10 @@ export default function Menu({
   whereToFind,
   vlog,
   customerReviews,
-  contact,
+  contactWithUs,
   addressWood,
   toggleDropdown,
   toggleDropDownNavbar,
-  setTexts,
 }) {
   const refreshPage = () => {
     window.location.reload(); // Reloads the entire page
@@ -42,7 +41,7 @@ export default function Menu({
           <a href="#">{customerReviews}</a>
         </div>
         <div>
-          <a href="#">{contact}</a>
+          <a href="#">{contactWithUs}</a>
         </div>
       </div>
       <div className={styles.languageAndButtonElements}>

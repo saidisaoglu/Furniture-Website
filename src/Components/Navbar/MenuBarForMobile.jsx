@@ -8,7 +8,7 @@ export default function MenuForMobile({
   whereToFind,
   vlog,
   customerReviews,
-  contact,
+  contactWithUs,
   addressWood,
   closeDropdown,
 }) {
@@ -23,7 +23,7 @@ export default function MenuForMobile({
         <a>{whereToFind}</a>
         <a>{vlog}</a>
         <a>{customerReviews}</a>
-        <a>{contact}</a>
+        <a>{contactWithUs}</a>
         <button className={styles.buttonContainer}>
           <div className={styles.buttonElements}>
             <img src={ShoppingIcon} alt="Shopping Icon" />

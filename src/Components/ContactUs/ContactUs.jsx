@@ -29,7 +29,7 @@ export default function ContactUs({
   educationalinformation,
   customerReviews,
   aboutUs,
-  contact,
+  contactWithUs,
   designerText,
   designer,
 }) {
@@ -102,7 +102,7 @@ export default function ContactUs({
               <p>{educationalinformation}</p>
               <p>{customerReviews}</p>
               <p>{aboutUs}</p>
-              <p>{contact}</p>
+              <p>{contactWithUs}</p>
             </div>
           </div>
           {/* ------------------responsive768------------ */}
@@ -117,7 +117,7 @@ export default function ContactUs({
               <p>{customerReviews}</p>
               <p>{aboutUs}</p>
               <p>{ourProjects}</p>
-              <p>{contact}</p>
+              <p>{contactWithUs}</p>
               <p>{whereToFind}</p>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function ContactUs({
             <div className={styles.fourthWrapperElement}>
               <p>{customerReviews}</p>
               <p>{aboutUs}</p>
-              <p>{contact}</p>
+              <p>{contactWithUs}</p>
             </div>
           </div>
         </div>

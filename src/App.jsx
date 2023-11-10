@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import HomePage from "./Components/HomePage/HomePage";
 import Projects from "./Components/Projects/Projects";
@@ -13,7 +12,7 @@ import WhereToFind from "./Components/WhereToFind/WhereToFind";
 import CustomerComments from "./Components/CustomerComments/CustomerComments";
 
 export function App() {
-  const [texts, setTexts] = useState({
+  const texts = {
     locationText: "Bakı, Əhməd Rəcəbli",
     phoneNumber: "+994 55 555 55 55",
     homePage: "Ana səhifə",
@@ -21,7 +20,6 @@ export function App() {
     whereToFind: "Haradan tapaq?",
     vlog: "Vlog",
     customerReviews: "Müştəri rəyləri",
-    contact: "Əlaqə",
     addressWood: "Address Wood",
     Interior: "İnteryer",
     Exterior: "Eksteryer",
@@ -43,11 +41,11 @@ export function App() {
     styless: "Üslublar",
     educationalinformation: "Öyrədici Məlumatlar",
     customerReviews: "Müştəri Rəyləri",
-    contact: "Əlaqə",
+    contactWithUs: "Əlaqə",
     designerText:
       "© Saytın hazırlanması Webrandy şirkətinə məxsusdur, bütün hüquqlar qorunur.",
     designer: "Webrandy.com",
-  });
+  };
   const isMobile = useMediaQuery({ maxWidth: 1023 });
   return (
     <div>
@@ -61,9 +59,8 @@ export function App() {
             whereToFind={texts.whereToFind}
             vlog={texts.vlog}
             customerReviews={texts.customerReviews}
-            contact={texts.contact}
+            contactWithUs={texts.contactWithUs}
             addressWood={texts.addressWood}
-            setTexts={setTexts}
           />
           <Projects
             projects={texts.projects}
@@ -72,9 +69,9 @@ export function App() {
             Landscape={texts.Landscape}
             RepairAndConstruction={texts.RepairAndConstruction}
           />
-          <Vlog />
-          <WhereToFind />
-          <CustomerComments />
+          {/* <Vlog /> */}
+          {/* <WhereToFind /> */}
+          {/* <CustomerComments /> */}
           <AboutUs
             aboutUs={texts.aboutUs}
             userName={texts.userName}
@@ -102,7 +99,7 @@ export function App() {
             educationalinformation={texts.educationalinformation}
             customerReviews={texts.customerReviews}
             aboutUs={texts.aboutUs}
-            contact={texts.contact}
+            contactWithUs={texts.contactWithUs}
             designerText={texts.designerText}
             designer={texts.designer}
           />
@@ -120,9 +117,8 @@ export function App() {
                 whereToFind={texts.whereToFind}
                 vlog={texts.vlog}
                 customerReviews={texts.customerReviews}
-                contact={texts.contact}
+                contactWithUs={texts.contactWithUs}
                 addressWood={texts.addressWood}
-                setTexts={setTexts}
               />
             </FullpageSection>
             <FullpageSection>
@@ -134,7 +130,7 @@ export function App() {
                 RepairAndConstruction={texts.RepairAndConstruction}
               />
             </FullpageSection>
-            <FullpageSection>
+            {/* <FullpageSection>
               <Vlog />
             </FullpageSection>
             <FullpageSection>
@@ -142,7 +138,7 @@ export function App() {
             </FullpageSection>
             <FullpageSection>
               <CustomerComments />
-            </FullpageSection>
+            </FullpageSection> */}
             <FullpageSection>
               <AboutUs
                 aboutUs={texts.aboutUs}
@@ -173,7 +169,7 @@ export function App() {
                 educationalinformation={texts.educationalinformation}
                 customerReviews={texts.customerReviews}
                 aboutUs={texts.aboutUs}
-                contact={texts.contact}
+                contactWithUs={texts.contactWithUs}
                 designerText={texts.designerText}
                 designer={texts.designer}
               />

@@ -6,7 +6,7 @@ export default function ThirdNavbarMenu({
   whereToFind,
   vlog,
   customerReviews,
-  contact,
+  contactWithUs,
 }) {
   return (
     <div className={styles.dropDownNavbarElement}>
@@ -16,7 +16,7 @@ export default function ThirdNavbarMenu({
         <a href="#">{whereToFind}</a>
         <a href="#">{vlog}</a>
         <a href="#">{customerReviews}</a>
-        <a href="#">{contact}</a>
+        <a href="#">{contactWithUs}</a>
       </div>
     </div>
   );
