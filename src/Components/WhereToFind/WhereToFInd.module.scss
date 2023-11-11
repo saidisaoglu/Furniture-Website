@@ -25,8 +25,13 @@
     img {
       width: 25%;
       position: absolute;
-      top: -7px;
+      top: 0;
       left: 0;
+     
+
+      @include responsive992 {
+        top: -7px;
+      }
       @include responsive374 {
         width: 233px;
       }
@@ -114,6 +119,7 @@
             &.playListItemActive {
               background: url("../Images/WhereToFindImg/İtems01\ \(1\).png");
               background-size: cover;
+              color: white;
               @include responsive580 {
                 height: 75px;
               }
@@ -169,17 +175,17 @@
 
         height: 100%;
         overflow: hidden;
-        border-radius: 16px;
+        border-radius: 8px;
         iframe {
           object-fit: cover;
           width: 100%;
           height: 65vh;
-          border-radius: 16px;
+          border-radius: 8px;
           @include responsive1440 {
             height: 402px;
           }
           @include responsive992 {
-            height: 373px;
+            height: 211px;
           }
         }
       }
@@ -208,7 +214,4 @@
 .playList::-webkit-scrollbar-thumb:hover {
   background: #cf946a;
 }
-// .playList::-webkit-scrollbar-thumb {
-//   max-height: 50px; /* İstediğiniz yüksekliği burada belirleyin */
-//   overflow-y: scroll; /* Scroll çubuğunu sadece gerektiğinde görüntülemek için */
-// }
+

@@ -15,7 +15,7 @@ export default function Menu({
   toggleDropDownNavbar,
 }) {
   const refreshPage = () => {
-    window.location.reload(); // Reloads the entire page
+    window.location.reload(); 
   };
   return (
     <div className={styles.menuContainer}>
@@ -24,12 +24,12 @@ export default function Menu({
       </div>
       <div className={styles.textsElement}>
         <div>
-          <a href="" onClick={refreshPage}>
+          <a href="#" onClick={refreshPage}>
             {homePage}
           </a>
         </div>
         <div>
-          <a href="">{projects}</a>
+          <a href="#projects">{projects}</a>
         </div>
         <div>
           <a href="#">{whereToFind}</a>

@@ -1,3 +1,4 @@
+// Vlog.jsx
 import React, { useRef, useState } from "react";
 import VlogScss from "./Vlog.module.scss";
 import VectorImg from "../Images/VlogCompImg/VectorImg.png";
@@ -20,16 +21,17 @@ export default function Vlog() {
       setIsPlaying(!isPlaying);
     }
   };
+
   const buttonStyle = {
     display: isPlaying ? "none" : "block",
   };
+
   return (
     <section className={VlogScss.VlogSection}>
       <div className={VlogScss.VlogSectionHeader}>
         <h2>Vloglar</h2>
         <img src={VectorImg} alt="" />
       </div>
-      {/* <VlogSectionCarousel /> */}
       <div className={VlogScss.videoContainer}>
         <img
           onClick={handlePlay}
@@ -44,7 +46,7 @@ export default function Vlog() {
           ref={videoRef}
           src={Video1}
         ></video>
-        <VlogSectionCarousel />
+        <VlogSectionCarousel isPlaying={isPlaying} />
       </div>
     </section>
   );

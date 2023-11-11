@@ -4,6 +4,7 @@ import Projects from "./Components/Projects/Projects";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Vlog from "./Components/Vlog/Vlog";
+import "../src/App.scss";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
@@ -47,6 +48,13 @@ export function App() {
     designer: "Webrandy.com",
   };
   const isMobile = useMediaQuery({ maxWidth: 1023 });
+  var cursor = document.querySelector(".cursor");
+  var cursor2 = document.querySelector(".cursor2");
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.cssText = cursor2.style.cssText =
+      "left:" + e.clientX + "px; top:" + e.clientY + "px;";
+  });
+
   return (
     <div>
       {isMobile ? (
@@ -177,6 +185,8 @@ export function App() {
           </FullPageSections>
         </Fullpage>
       )}
+      <div className="cursor"></div>
+      <div className="cursor2"></div>
     </div>
   );
 }

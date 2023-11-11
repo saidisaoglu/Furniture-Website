@@ -54,6 +54,7 @@
           width: 220px;
           height: 220px;
         }
+        
         @include responsive374 {
           width: 95px;
           height: 100px;
@@ -73,6 +74,11 @@
           padding: 26px;
           height: 205px;
           width: 55vw;
+        }
+        @include responsive580 {
+          width: 35vw;
+          padding: 16px 8px;
+          height: 232px;
         }
         @include responsive374 {
           width: 134px;

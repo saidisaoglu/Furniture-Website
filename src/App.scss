@@ -1,0 +1,27 @@
+@import "./Scss/Color/colors";
+
+.cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #7d6554;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+.cursor2 {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}

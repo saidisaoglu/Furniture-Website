@@ -48,7 +48,7 @@ export default function Projects({
   };
 
   return (
-    <section className={styles.sectionContainer}>
+    <section className={styles.sectionContainer} id="projects">
       <div className={styles.textContainer}>
         <p>{projects}</p>
       </div>
